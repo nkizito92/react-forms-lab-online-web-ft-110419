@@ -1,17 +1,19 @@
 import React from "react";
 
 class TwitterMessage extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
-      firstName: 'John'
+      firstName: 'John';
+      maxChars : this.props.value;
     };
   }
   
   handleFirstName = event => {
     this.setState ({
       firstName : event.target.value 
+      maxChars : firstName.length
     })
   }
 
