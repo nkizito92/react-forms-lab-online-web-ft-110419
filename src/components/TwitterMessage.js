@@ -12,6 +12,7 @@ class TwitterMessage extends React.Component {
   handleFirstName = event => {
     this.setState ({
       firstName : event.target.value 
+      maxChar : event.target.value
     })
   }
 
